@@ -221,3 +221,9 @@ for (i = 0; i < charactersNames.length; i++) {
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+const randomCharacter = function () {
+  const index = Math.floor(Math.random() * starWarsCharacters.length)
+  const character = starWarsCharacters[index]
+  console.log(character)
+}
+randomCharacter()
